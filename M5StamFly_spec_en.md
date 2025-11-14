@@ -126,7 +126,14 @@ To ensure expandability, two Grove interface systems are provided. This allows e
   - G1: GROVE I (RX)
   - G2: GROVE O (TX)
 
-### 4.4 Other
+### 4.4 VL53L3CX ToF Sensor Control Pins
+
+The two VL53L3CX distance sensors (forward and bottom) share the same I2C address, so the XSHUT pins must be used to individually initialize and change their addresses.
+
+- **Forward ToF Sensor XSHUT**: G9
+- **Bottom ToF Sensor XSHUT**: G7
+
+### 4.5 Other
 
 A buzzer and full-color RGB LED are mounted for user feedback and status display. The control pins for these are as follows:
 
