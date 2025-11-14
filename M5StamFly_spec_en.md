@@ -128,10 +128,12 @@ To ensure expandability, two Grove interface systems are provided. This allows e
 
 ### 4.4 VL53L3CX ToF Sensor Control Pins
 
-The two VL53L3CX distance sensors (forward and bottom) share the same I2C address, so the XSHUT pins must be used to individually initialize and change their addresses.
+The two VL53L3CX distance sensors (forward and bottom) share the same I2C address, so the XSHUT pins must be used to individually initialize and change their addresses. Each sensor also has an interrupt pin (GPIO1/INT) that can be used for measurement completion notification.
 
 - **Forward ToF Sensor XSHUT**: G9
+- **Forward ToF Sensor INT**: G8
 - **Bottom ToF Sensor XSHUT**: G7
+- **Bottom ToF Sensor INT**: G6
 
 ### 4.5 Other
 
